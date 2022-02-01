@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Test=2(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Vtiger_Organization.CreateOrganization">
+        <methods>
+          <include name="ConfigBC"/>
+          <include name="configuBS"/>
+          <include name="ConfigBM"/>
+          <include name="ConfigAM"/>
+          <include name="CreateOragnizationWithIndustry"/>
+          <include name="ConfigAS"/>
+          <include name="ConfigAC"/>
+          <include name="CreateOrganizationTest"/>
+        </methods>
+      </class> <!-- Vtiger_Organization.CreateOrganization -->
+    </classes>
+  </test> <!-- Test=2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
